@@ -9,6 +9,7 @@ header div:first-child{
     width: 40%;
     float: left;
     font-size: 40px;
+    font-family: 'Courgette', cursive;
 }
 
 header div:nth-child(2){
