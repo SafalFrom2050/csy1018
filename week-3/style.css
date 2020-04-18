@@ -1,0 +1,62 @@
+body{
+    margin: 0;
+    color: white;
+    background: violet;
+}
+
+header div:first-child{
+    background: violet;
+    width: 40%;
+    float: left;
+    font-size: 40px;
+}
+
+header div:nth-child(2){
+    background-color: blueviolet;
+    width: 40%;
+    float: left;
+}
+.clear{
+    clear: both;
+}
+
+nav{
+    background:blueviolet ;
+}
+nav ul{
+    margin:5px;
+    padding:0;
+}
+nav ul li{
+    list-style: none;
+    float: left;
+    margin:0.5%;
+} 
+nav ul li a{
+    text-decoration: none;
+    display: block;
+    width: 100%;
+}   
+nav ul li:hover{
+    background: violet;
+} 
+
+section div:first-child{
+    padding: 4%;
+    background: blueviolet;
+    width: 17%;
+    float: left;
+}
+section div:nth-child(2){
+    padding: 4%;
+    background: violet;
+    width: 53%;
+    float: left;
+}
+
+footer{
+    padding: 4%;
+    background-color: violet;
+    margin-top: 0.5%;
+    width:100%;
+}
