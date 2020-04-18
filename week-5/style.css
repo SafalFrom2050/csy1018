@@ -1,0 +1,87 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header, footer{
+    /* Text to the Center */
+    text-align: center;
+
+    /* Pushing up the header */
+    margin-top: -22px;
+    height: 100px;
+    background: cornflowerblue;
+    color: white;
+
+    /* For vertical positioning the text */
+    padding-top: 20px;
+}
+nav{
+    background: yellowgreen;
+    height: 40px;
+    padding-top:25px;
+}
+nav ul{
+    margin:0;
+    display: flex;
+
+    /* Menu to the right side */
+    justify-content: flex-end;
+}
+
+nav ul li{
+    /* Removes the unordered list decorators */
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+
+    /* Seperate the menu items */
+    margin-right: 8px;
+    color: white;
+}
+
+section{
+    display: flex;
+    justify-content: space-between;
+    color: #333;
+    text-align: center;
+}
+
+.main{
+    background: skyblue;
+    width: 50%;
+
+    /* Covers 60% of viewport display height */
+    height: 40vh;
+    /* For vertical positioning the text */
+    padding-top: 30%;
+}
+.aSide{
+    background: rgb(248, 220, 58);
+    width: 50%;
+
+    /* Covers 60% of viewport display height */
+    height: 40vh;
+    /* For vertical positioning the text */
+    padding-top: 30%;
+}
+
+@media screen and (max-width:600px){
+    nav ul{
+        /* To set the navigation menu align downwards */
+        flex-direction: column;
+    }
+    nav{
+        height: auto;
+    }
+    nav ul li{
+        /* For spaces between navigation menus */
+        padding: 10px;
+    }
+    section{ flex-direction: column;}
+    .main, .aSide{
+        width: 100%;
+    }
+
+}
