@@ -1,0 +1,51 @@
+body{
+    margin:0;
+    
+    /* Text Color White */
+    color: white; 
+}
+
+h1, h2, h3{
+    /* To add margin in h1, h2, h3 */
+    margin:1em ;
+}
+
+header{
+    height: 200px;
+    margin-top: -32px;
+    
+    /* Covers the entire width. */
+    width: 100%;
+    background: crimson;
+}
+
+.section__left{
+    background: rgb(28, 28, 247);
+
+    /* Covers half of the screen. */
+    width: 50%;
+    /* Main part of the exercise */
+    float: left;
+
+    /* Covers 60% of display height */
+    height: 60vh;
+}
+.section__right{
+    background: darkblue;
+
+    /* Covers half of the screen. */
+    width: 50%;
+    /* Main part of the exercise */
+    float: right;
+
+    /* Covers 60% of display height */
+    height: 60vh;
+}
+footer{
+    /* Covers the entire width. */
+    width: 100%;
+    background: crimson;
+
+    height: 500px;
+}
+    
