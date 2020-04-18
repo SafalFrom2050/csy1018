@@ -64,3 +64,18 @@ section .thumbnail-title{
     text-shadow:0px 4px 4px #333;
 }
 
+@media screen and (max-width:600px){
+    section{
+        /* Section part should cover up more part of screen */
+        width: 80%;
+    }
+
+    ul{
+        /* List items below should create a next row */
+        flex-wrap: wrap;
+    }
+    ul li{
+        /* A row contains max 4 items */
+        width: 24%;
+    }
+}
