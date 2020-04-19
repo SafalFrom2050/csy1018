@@ -1,0 +1,74 @@
+body{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.container{
+    width: 10px;
+    height: 10px;
+    margin: 10px;
+}    
+
+
+
+.rect1{
+    width: 100%;
+    height: 100%;
+    background: rgb(182, 24, 24);
+
+    animation-name:anim1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    animation-direction: backwards;
+}
+
+.rect2{
+    width: 100%;
+    height: 100%;
+    background: red;
+
+    animation-name:anim1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+    animation-direction: forwards;
+}
+
+@keyframes anim1{
+    0%{
+        transform-origin: center;
+        transform: rotate(0deg);
+    }
+    25%{
+        transform-origin: center;
+        transform: rotate(180deg);
+    }
+    50%{
+        transform-origin: center;
+        transform: rotate(250deg);
+    }
+    100%{
+        transform-origin: center;
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes anim2{
+    0%{
+        
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(180deg);
+    }
+    50%{
+        transform: rotate(250deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
