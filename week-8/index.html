@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+
+<script>
+    function validateForm(fm){
+        alert("Your response has been recorded!");
+    }
+</script>
+
+</head>
+<body>
+    <header>
+        <h1> How To Create Form in HTML? </h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Information</a></li>
+            <li><a href="">Photos</a></li>
+            <li><a href="">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section>
+
+        <form method="POST" action="" onsubmit="validateForm(this);">
+            Name <br>
+            <input type="text" name="firstName">
+            <br>
+            Email Address <br>
+            <input type="text" name="email">
+            <br>
+            How are you feeling today? <br>
+            <div>
+                (Bad) :( <input type="radio" name="feeling"> <input type="radio" name="feeling"> <input type="radio" name="feeling"> 
+                <input type="radio" name="feeling"> <input type="radio" name="feeling"> :) (Happiest Day in Life)
+            </div>
+            <br>
+
+            Your Message
+            <textarea rows="4" cols="50"></textarea>
+            <br>
+            Schedule Message?
+            <input type="time" name="scheduleTime">
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+
+    </section>
+
+</body>
+</html>
